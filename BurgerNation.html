@@ -1,0 +1,1636 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link href="https://fonts.googleapis.com/css2?family=Amatic+SC&family=Fredoka+One&family=Indie+Flower&family=Playfair+Display&family=Roboto&family=Satisfy&display=swap"
+        rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Righteous&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Short+Stack&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Rowdies&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@600&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@700&display=swap" rel="stylesheet">
+        <link rel="stylesheet"     href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+        <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+</head>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+    }
+
+    #mainbanner {
+        background-color: rgb(197, 31, 31);
+
+
+        height: 1200px;
+        width: 100%;
+    }
+
+    .mainbanner1 {
+        width: 100%;
+        display: flex;
+
+    }
+
+    .mainlogo {
+        width: 30%;
+        float: left;
+        padding-left: 30px;
+        padding-top: 30px;
+
+    }
+
+    .mainnav {
+        width: 70%;
+        margin-top: 30px;
+
+    }
+
+    .mainnav li {
+        display: inline;
+        list-style-type: none;
+        width: 100px;
+        margin-left: 20px;
+
+    }
+
+    .mainnav a {
+        text-decoration: none;
+        color: rgb(204, 173, 173);
+        padding: 5px;
+        font-size: 15px;
+        font-family: 'Oswald', sans-serif;
+    }
+
+    .mainnav ul li a:hover {
+        color: white
+
+    }
+
+    .mainnav {
+        float: right;
+    }
+
+    .btndownload {
+        padding: 20px;
+        margin-right: 30px;
+        border-radius: 30px;
+        border: none;
+        width: 200px;
+        margin-left: 30px;
+        color: rgb(228, 137, 0);
+        font-family: georgia, garamond, serif;
+
+    }
+
+    .banner2 {
+        display: flex;
+        width: 100%;
+    }
+
+    .textbanner {
+        margin-top: 100px;
+        width: 50%;
+
+
+    }
+
+    .textbanner h1 {
+        /* font-family: Comic Sans MS; */
+        font-family: 'Roboto', sans-serif;
+        font-family: 'Rowdies', cursive;
+        font-size: 120px;
+        color: white;
+        margin-left: 140px;
+
+    }
+
+    .textbanner h3 {
+        margin-left: 140px;
+        color: white;
+        font-size: 30px;
+    }
+
+    .circleimg {
+        background-color: rgb(255, 210, 7);
+        border-radius: 50%;
+        height: 200px;
+        width: 200px;
+        margin-left: 50px;
+        position: relative;
+        padding: 20px;
+    }
+
+    .circleimg .textdis h2 {
+        margin-left: -1px;
+        font-size: 60px;
+        color: white;
+          }
+
+    .circleimg .textdis h1 {
+        margin-left: 1px;
+        font-size: 70px;
+        margin-top: 30px;
+        
+        
+    }
+    .textfirstorder p
+    {
+        margin-left: 260px;
+        margin-top: -170px;
+        position: absolute;
+        font-family: 'Rowdies', cursive;
+       
+    
+
+    }
+    .btnorder
+    {
+        margin-top: 40px;
+        padding: 20px;
+       
+        border-radius: 30px;
+        border: none;
+        width: 200px;
+          
+        color: rgb(228, 137, 0);
+        font-family: georgia, garamond, serif;
+    }
+    .burgerbanner {
+        width: 50%;
+        background-image: url('hero1.png');
+        background-size: cover;
+        margin-top: -80px;
+        
+    }
+/* 
+    .burgerbanner img {
+        width: 100%;
+        height: auto;
+         
+         margin-top: 0px;
+    } */
+
+    .textdis {
+        position: absolute;
+        margin-left: 30px;
+    }
+
+    .btnorder {
+        padding: 20px;
+        margin-right: 30px;
+        border-radius: 30px;
+        border: none;
+        width: 200px;
+        margin-left: 30px;
+        color: rgb(228, 137, 0);
+        font-family: georgia, garamond, serif;
+        margin-left: 230px;
+
+    }
+
+    .deal {
+        width: 100%;
+        display: flex;
+    }
+
+    .deal1 {
+        width: 50%;
+        height: 120%;
+        position: relative;
+        float: left;
+    }
+    
+
+    .deal1 img {
+        width: 100%;
+        height: 100%;
+    }
+
+    .overlay {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        transition: all 0.5s ease;
+        
+    }
+      .pri1{
+        background-color: white;
+        border-radius: 100%;
+        height: 180px;
+        width: 180px;
+        margin-left: 60px;
+        margin-top: -20px;
+        position: relative;
+    }  
+    
+    
+    .over-text .pri1 .text1 h3 {
+        margin-left: -25px;
+        font-size: 60px;
+        color: black;
+        margin-top: -200px;
+       
+          }
+          .over-text1 .pri2 .text2 h3 {
+        margin-left: -25px;
+        font-size: 40px;
+        color:white;
+        margin-top: -200px;
+        padding: 10px;
+       
+          }
+          .over-text .pri3 .text2 h3 {
+        margin-left: -25px;
+        font-size: 60px;
+        color: white;
+        margin-top: -200px;
+       
+          }
+    .overlay .over-text h1
+    {
+      color: white;
+      font-size: 60px;
+      margin-top: 50px;
+      margin-left: 100px;
+      font-family: 'Rowdies', cursive;
+    }
+    .overlay .over-text h3
+    {
+      color: white;
+      font-size: 30px;
+      margin-top: 300px;
+      margin-left: 100px;
+    }
+
+    .overlay:hover {
+        background-color: rgba(0, 0, 0, 0.5);
+    } 
+
+
+     .pri2{
+        background-color: rgb(209, 118, 65);
+        border-radius: 100%;
+        height: 150px;
+        width: 150px;
+         margin-top: -210px;
+        margin-left: 60px;
+        position: relative;
+    }
+    .over-text .pri2 .text2 h3 {
+        margin-left: -25px;
+        font-size: 60px;
+        color: black;
+        margin-top: -200px;
+       
+          }
+    .overlay1 {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        transition: all 0.5s ease;
+        
+    }
+    .over-text1 {
+        text-align: center;
+        margin-top: 200px;
+        margin-left: 20px;
+    } 
+  .overlay1  .over-text1 h1
+    {
+        color: white;
+        font-size: 40px;
+        margin-left: 10px;
+        margin-top: 20px;
+        font-family: 'Rowdies', cursive;
+    }
+    
+    .overlay1  .over-text1 h3
+    {
+        color: white;
+        font-size: 20px;
+       
+    }
+    .overlay1:hover {
+        background-color: rgba(0, 0, 0, 0.5);
+    } 
+   
+   
+    
+    .pri3{
+        background-color: rgb(209, 118, 65);
+        border-radius: 100%;
+        height: 150px;
+        width: 150px;
+        margin-top: 450px;
+        margin-left: 60px;
+    } 
+ 
+
+
+
+     .overlay2 {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        transition: all 0.5s ease;
+        
+    }
+  .overlay2  .over-text2 h3{
+        color: white;
+        margin-top: 100px;
+        margin-left: 80px;
+    }
+
+    .overlay2  .over-text2 h1
+    {
+        color: white;
+      font-size: 40px;
+      margin-top: 10px;
+      margin-left: 80px;
+      font-family: 'Rowdies', cursive;
+    }
+    
+
+    .overlay2:hover {
+        background-color: rgba(0, 0, 0, 0.5);
+    } 
+
+    .deal2 {
+        width: 50%;
+        height: 120%;
+        position: relative;
+        float: left;
+    }
+
+    .deal2 img {
+        width: 100%;
+        height: 500px;
+
+    }
+
+   
+
+    #banner3 {
+        background-color: rgb(196, 33, 33);
+        width: 100%;
+
+        height: 1000px;
+    }
+
+    .banner3div {
+        margin-top: 30px;
+        width: 100%;
+        display: flex;
+       
+
+    }
+
+  
+
+    .textbaked h1 {
+    
+        color: white;
+        font-family: 'Libre Baskerville', serif;
+        
+        
+       
+        
+    }
+
+    .banner3img {
+        width: 100%;
+        display: flex;
+
+    }
+
+    .text1 {
+        width: 30%;
+        margin-top: 150px;
+        padding: 60px;
+        float: left;
+
+        
+    }
+    .text1 h1{
+        font-size: 30px;
+        color: white;
+
+    }
+    .text1 p{
+        font-size: 20px;
+        color: white;
+        
+    }
+
+
+    .img {
+        width: 40%;
+        margin-top: 50px;
+    }
+
+    .text2 {
+        width: 30%;
+        margin-top: 150px;
+        padding: 60px;
+        float: right;
+        text-align: right;
+
+    }
+    .text2 h1{
+        font-size: 30px;
+        color: white;
+
+    }
+    .text2 p{
+        font-size: 20px;
+        color: white;
+        
+    }
+
+#Ourmenu
+{
+    background-color: rgb(248, 227, 248);
+    height: 1500px;
+
+}
+.ourmenudiv
+{
+    display: flex;
+    width: 100%;
+
+
+}
+ .textmenu
+{
+    width: 100%;
+    margin-top: 50px;
+    text-align: center;
+    
+} 
+
+.textmenu h3{
+    color: rgb(247, 90, 18);
+    font-size: 20px;
+    font-family: 'Short Stack', cursive;
+}
+.textmenu h1{
+    color: black;
+    font-size: 60px;
+    margin-top: 40px;
+    font-family: 'Rowdies', cursive;
+}
+
+.burgercard1
+{
+    width: 100%;
+    display: flex;
+    margin: 0px;
+        
+  
+
+}
+.burgercard1 img{
+    margin-top: -180px;
+}
+
+.Chicken
+{
+
+    
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.0.1);
+  transition: 0.3s;
+  border-radius: 10px;
+  width: 33%;
+  text-align: center;
+  margin: 40px;
+  margin-left: 40px;
+  margin-right: 20px;
+  padding-bottom: 20px;
+}
+.Chicken h1
+{
+    font-family: 'Righteous', cursive;
+}
+
+.Chicken p
+{
+    font-family: 'Patrick Hand', cursive;
+}
+.Fatboy h1
+{
+    font-family: 'Righteous', cursive;
+}
+.Fatboy p
+{
+    font-family: 'Patrick Hand', cursive;
+}
+.classic h1
+{
+    font-family: 'Righteous', cursive;
+}
+.classic p
+{
+    font-family: 'Patrick Hand', cursive;
+}
+.bnine h1
+{
+    font-family: 'Righteous', cursive;
+}
+.bnine p
+{
+    font-family: 'Patrick Hand', cursive;
+}
+.beef  h1
+{
+    font-family: 'Righteous', cursive;
+}
+.beef p
+{
+    font-family: 'Patrick Hand', cursive;
+}
+.bacon h1
+{
+    font-family: 'Righteous', cursive;
+}
+.bacon p
+{
+    font-family: 'Patrick Hand', cursive;
+}
+
+.Chicken:hover {
+  background-color:white;
+  
+}
+
+.Chicken .container {
+  padding: 2px 16px 50px 16px;
+} 
+.Fatboy
+{
+    
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.0.1);
+  transition: 0.3s;
+  border-radius: 10px;
+  width: 33%;
+  text-align: center;
+  margin: 40px;
+  margin-left: 40px;
+  margin-right: 20px;
+  padding-bottom: 20px;
+}
+.Fatboy:hover {
+  background-color:white;
+}
+
+
+.Fatboy .container {
+    padding: 2px 16px 50px 16px;
+} 
+.classic
+{
+    
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.0.1);
+  transition: 0.3s;
+  border-radius: 10px;
+  width: 33%;
+  text-align: center;
+  margin: 40px;
+  margin-left: 40px;
+  margin-right: 20px;
+  padding-bottom: 20px;
+}
+.classic:hover {
+  background-color:white;
+}
+
+
+.classic .container {
+    padding: 2px 16px 50px 16px;
+} 
+/* 
+.container {
+  padding: 2px 16px;
+} */
+
+.container h3
+{
+    color: rgb(177, 18, 18);
+    padding: 5px;
+    
+}
+.container h1
+{
+    padding: 5px;
+    font-size: 30px;
+    /* font-family: 'Righteous', cursive; */
+   
+    
+}
+
+
+.burgercard2
+{
+    width: 100%;
+    display: flex;
+    margin: 10px;
+
+}
+.burgercard2 img{
+    margin-top: -180px;
+}
+
+.bnine
+{
+
+    
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+  width: 33%;
+  text-align: center;
+  margin: 40px;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.0.1);
+  transition: 0.3s;
+  border-radius: 10px;
+  /* margin-top: -80px; */
+}
+.bnine:hover {
+  background-color:white;
+}
+
+
+ .container {
+  padding: 2px 16px;
+} 
+.beef
+{
+    
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+  width: 33%;
+  text-align: center;
+  margin: 40px;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.0.1);
+  transition: 0.3s;
+  border-radius: 10px;
+}
+.beef:hover {
+  background-color:white;
+}
+
+
+.container {
+  padding: 2px 16px;
+} 
+.bacon
+{
+    
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+  width: 33%;
+  text-align: center;
+  margin: 40px;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.0.1);
+  transition: 0.3s;
+  border-radius: 10px;
+}
+.bacon:hover {
+  background-color:white;
+}
+
+
+ .container {
+  padding: 2px 16px;
+} 
+
+.container h3
+{
+    color: rgb(177, 18, 18);
+    padding: 5px;
+    
+}
+.container h1
+{
+    padding: 5px;
+    font-size: 30px;
+    
+}
+
+.add
+{
+   background-color:  rgb(177, 18, 18);
+    height: auto;
+    max-width: 50px;
+    border-radius: 100%;
+    margin: auto auto -50px auto;
+    padding: 17px 10px;
+    transition: all 0.5s ease;
+    
+}
+
+.add a .fas{
+    font-size: 30px;
+}
+
+.Chicken:hover  .add
+{
+transform: scale(1.2);
+}
+.Fatboy:hover  .add
+{
+transform: scale(1.2);
+}
+.classic:hover  .add
+{
+transform: scale(1.2);
+}
+.bnine:hover  .add
+{
+transform: scale(1.2);
+}
+.beef:hover  .add
+{
+transform: scale(1.2);
+}
+.bacon:hover  .add
+{
+transform: scale(1.2);
+}
+#banner4{
+    background-image: url('burgerbg.jpg');
+    width: 100%;
+    height: 1000px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+  
+
+    
+}
+
+.reviews
+{
+    
+    width: 80%;
+    height: 800px;
+   
+    background-color: white;
+}
+
+.quo img
+{
+    margin-left: 900px;
+    margin-top: -200px;
+
+}
+  .quo  h3
+  {
+   color: rgb(245, 211, 61);
+   font-size: 20px;
+   text-align: center;
+   margin-top: 100px;
+   font-family: 'Short Stack', cursive;
+  }
+  .quo  h1
+  {
+   color: black;
+   font-size: 60px;
+   text-align: center;
+   margin-top: 30px;
+   font-family: 'Rowdies', cursive;
+
+  }
+
+.textreview
+{
+  text-align: center;
+  margin-top: 20px;
+
+
+  
+}
+.images
+{
+    display: flex;
+    width: 100%;
+}
+.images .cust1
+{
+    margin-left: 100px;
+    margin-top: 70px;
+    width: 40%;
+}
+    .cust1 img{
+     border-radius: 50%;
+    }
+
+    .cust1 h3{
+        margin-left: 90px;
+        margin-top: -60px;
+        color: black;
+        font-family: 'Fredoka One', cursive;
+     
+    }
+    .cust1 p
+    {
+        color: gray;
+        margin-left: 90px;
+    }
+
+    .cust1 h2{
+        margin-left: 80px;
+        font-size: 18px;
+        color: gray;
+    }
+ 
+    .images .cust2
+{
+    margin-left: 100px;
+    margin-top: 70px;
+    width: 40%;
+}
+
+.cust2 img{
+     border-radius: 50%;
+    }
+
+    .cust2 h3{
+        margin-left: 90px;
+        margin-top: -60px;
+        color: black;
+        font-family: 'Fredoka One', cursive;
+     
+    }
+    .cust2 p
+    {
+        color: gray;
+        margin-left: 90px;
+    }
+
+    .cust1 h2{
+        margin-left: 80px;
+        font-size: 18px;
+        color: gray;
+    }
+ 
+.cust2 .c1{
+  width: 25%;
+}
+.cust2 .c2{
+
+}
+
+#OUTLETS
+{
+    display: flex;
+    width: 100%;
+    background-color: rgb(236, 236, 248);
+    height: 1100px;
+}
+.Outlet
+{
+    text-align: center;
+    width: 100%;
+
+}
+
+
+
+.outlettext h1
+{
+    margin-top: 30px;
+   font-size: 50px;
+   font-family: 'Rowdies', cursive;
+}
+
+.outlettext h3
+{
+    margin-top: 200px;
+   color: chocolate;
+   font-family: 'Short Stack', cursive;
+}
+
+.outletimg
+{
+    margin-top: 40px;
+    display: flex;
+    width: 100%;
+}
+.outletimg .img1
+{
+    border-radius: 50%;
+    width: 33%;
+}
+.outletimg .img2
+{
+    border-radius: 10px;
+    width: 33%;
+}
+.outletimg .img3
+{
+    
+    width: 33%;
+}
+.cust3
+{
+    margin-top: 50px;
+}
+
+#banner5
+{
+    background-image: url(bannner5bg3.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 400px;
+    width: 100%;
+}
+
+.banner5div
+{
+    background-color:chocolate;
+  height: 300px;
+  width: 100%;
+  display: flex;
+  margin-bottom: -40px;
+}
+
+.shipping
+{
+    background-color: white;
+    border-radius: 100%;
+    height: 100px;
+    width: 100px;
+    position: relative;
+    margin-left:250px;
+    margin-top: -50px;
+  
+    
+}
+
+.textshipping
+{
+    margin-top: 90px;
+    margin-left: -140px;
+}
+.textshipping h1{
+    color: white;
+    font-family: 'Short Stack', cursive;
+    
+}
+.textshipping p{
+    color: white;
+    
+    font-family: 'Patrick Hand', cursive;
+    font-size: 20px;
+}
+
+
+.Dishes
+{
+    background-color: white;
+    border-radius: 100%;
+    height: 100px;
+    width: 100px;
+    position: relative;
+    margin-left: 180px;
+    margin-top: -50px;
+  
+    
+}
+
+.textdishes
+{
+    margin-top: 90px;
+    margin-left: -140px;
+}
+.textdishes h1{
+    color: white;
+    font-family: 'Short Stack', cursive;
+    
+}
+.textdishes p{
+    color: white;
+    font-family: 'Patrick Hand', cursive;
+    font-size: 20px;
+    
+    
+}
+.Delivery
+{
+    background-color: white;
+    border-radius: 100%;
+    height: 100px;
+    width: 100px;
+    position: relative;
+    margin-left: 150px;
+    margin-top: -50px;
+  
+    
+}
+
+.textdelivery
+{
+    margin-top: 90px;
+    margin-left: -140px;
+}
+.textdelivery h1{
+    color: white;
+    font-family: 'Short Stack', cursive;
+    
+}
+.textdelivery p{
+    color: white;
+    font-family: 'Patrick Hand', cursive;
+    font-size: 20px;
+    
+}
+
+#banner6
+{
+    
+    display: flex;
+    width: 100%;
+    background-color: rgb(197, 31, 31);
+    height: 800px;
+}
+
+.banner6div
+{
+    display: flex;
+    width: 100%;
+
+}
+
+.banner6div .banner6text
+{
+  width: 50%;
+}
+.banner6div .banner6img
+{
+    width: 50%;
+    margin-top: 100px;
+}
+
+.banner6text .icon6
+{
+  margin-left: 100px;
+  margin-top: 130px;
+}
+
+
+.banner6text h1
+{
+  font-size: 60px;
+  text-align: center;
+  color: white;
+  margin-top: 30px;
+  font-family: 'Rowdies', cursive;
+}
+.banner6text h2
+{
+  font-size: 30px;
+  color: white;
+  margin-top: 30px;
+  margin-left: 110px;
+}
+
+#FOOTER
+{
+height: 290px;
+
+background-color: white;
+
+}
+
+.footer
+{
+    width: 100%;
+    display: flex;
+  
+}
+.footnav
+{
+margin-top: 80px;
+  width: 80%;
+}
+
+
+    .footnav li {
+        display: inline;
+        list-style-type: none;
+        width: 100px;
+        margin-left: 50px;
+
+    }
+
+    .footnav a {
+        text-decoration: none;
+        color: black;
+        padding: 5px;
+        font-size: 15px;
+        font-family: 'Oswald', sans-serif;
+    }
+
+    .footnav ul li a:hover {
+        color: white
+    }
+
+.icons
+{
+  width: 20%;
+  margin-left: 30px;
+  margin-top: 30px;
+ 
+}
+
+
+</style>
+
+<body>
+    <section id="mainbanner">
+        <div class="mainbanner1">
+            <div class="mainlogo">
+                <img src="burgerlogo.png">
+            </div>
+            <div class="mainnav">
+                <nav>
+                    <ul>
+
+                        <li><a href="#portfolio">HOME</a> </li>
+                        <li><a href="#a">OUR MENU</a></li>
+                        <li> <a href="#s">OFFERS</a></li>
+                        <li> <a href="#s">ABOUT</a></li>
+                        <li><a href="#s">FRANCHISEE</a> </li>
+                        <li><a href="#s">CONTACT</a> </li>
+
+                        <li> <button class="btndownload">DOWNLOAD APP</button> </li>
+
+
+                    </ul>
+                </nav>
+            </div>
+
+        </div>
+        <div class="banner2">
+            <div class="textbanner">
+                <h3> Only $12.99</h3>
+                <h1>The Smokin<br>Burger</h1>
+
+                <div class="circleimg">
+                    <div class="textdis">
+                        <h1>
+                            20%
+                       </h1>   
+                           <h2 style="font-size: 30px;">   DISCOUNT</h2>
+                             
+                     
+                    </div>
+
+                </div>
+                <div class="textfirstorder">
+                    <p style="font-size: 30px;color: white;">On your first <br>order, if you order<br> online through<br> our App!</p>
+                </div>
+                <button class="btnorder"> ORDER ONLINE</button>
+            </div>
+
+            <div class="burgerbanner">
+                <!-- <img src="hero1.png"> -->
+            </div>
+        </div>
+
+
+    </section>
+    <section>
+        <div class="deal">
+            <div class="deal1">
+                
+                <img src="potatowedges.png">
+                <div class="overlay">
+                 
+                    <div class="over-text">
+                        <div class="pri1">
+                           <div class="text1">
+                               <h3>only <br> $17</h3>
+                               
+                        </div>
+                        </div>
+                         <h3> Deal of the day</h3>
+                        <h1> Quinoa & Black <br>Bean Burger</h1> 
+                       <button class="btnorder">Order now</button>
+                    </div>
+                </div>
+            </div>
+            <div class="deal2">
+                <img src="deal2im.jpeg">
+                <div class="overlay1">
+                   
+                    <div class="over-text1">
+                        <div class="pri2">
+                            <div class="text2">
+                                <h3>only <br> $15</h3>
+                                
+                         </div>
+                        </div> 
+                        <h3> Wedges Day</h3>
+                        <h1>Crispy Garlic Baked<br>Potato Wedges</h1>
+                        <button class="btnorder" style="margin-left: 20px;">Order now</button>
+                    </div>
+                </div>
+
+                <div class="deal3">
+                    <img src="deal2img1.jpg">
+                    <div class="overlay2">
+                    
+                        <div class="over-text2">
+                            <div class="pri3">
+                                <div class="text3">
+                                    <h3 style="font-size: 50px;margin-left: 30px;">only <br> $13</h3>
+                                    
+                             </div>
+                            </div>
+                            <h3> The Burger of The Month</h3>
+                            <h1> The<br> Farmhouse<br> Burger
+                            </h1>
+                            <button class="btnorder" style="margin-top: 60px;">Order now</button>
+                        </div> 
+                    </div>
+                </div>
+            </div>
+    </section>
+    <section id="banner3">
+       
+        <p style="text-align: center;font-size: 20px;color: white;">Ingredients</p>
+        <h1 style="text-align: center; font-family: 'Libre Baskerville';font-size: 50px;margin-top: 40px;color: white;">Baked with Natural <br>Ingredients</h1>
+      
+        <div class="banner3div">
+           
+         
+        </div>
+        <div class="banner3img">
+
+
+            <div class="text1">
+                       
+<h1>INGREDIENTS</h1> <br>
+<p style="">Baked with Natural Ingredients
+Fresh <br>Buns
+Lorem ipsum dolor sit amet,<br> consectetur adipisicing elit, <br>sed do eiusmod tempor.</p>
+<br><br>
+<h1>Lettuce Leaf </h1> <br>
+<p>Lorem ipsum dolor sit amet,<br> consectetur adipisicing elit,<br> sed do eiusmod tempor. </p>
+<br><br>
+
+<h1> Organic Onions</h1> <br>
+<p> Lorem ipsum dolor sit amet,<br> consectetur adipisicing elit,<br> sed do eiusmod tempor.</p>
+            </div>
+            <div class="img">
+                <img src="burger2.png">
+            </div>
+            <div class="text2">
+
+                <h1>Glow Cheese </h1>
+                <br>
+                <p>Lorem ipsum dolor sit amet,<br>  consectetur adipisicing elit, sed do <br>eiusmod tempor. </p>
+                <br> <br>
+                <h1> Quality Meat</h1>
+                <br>
+                <p>Lorem ipsum dolor sit amet,<br>  consectetur adipisicing elit, sed do <br>eiusmod tempor. </p>
+                <br> <br>
+               <h1>  Homemade Bacon</h1> <br>
+               <p>Lorem ipsum dolor sit amet,<br>  consectetur adipisicing elit, sed do <br>eiusmod tempor. </p>
+                
+                
+            </div>
+        </div>
+
+    </section>
+    <section id="Ourmenu">
+        <div class="ourmenudiv">
+            <div class="textmenu">
+               <h3> OUR MENU</h3>
+               <h1>Choose & Enjoy <br>
+
+               <span style="color:lightgray;height: 40px;"> | </span> </h1>
+            </div>
+        </div>
+        <div class="burgercard1" style="margin-top: 250px;">
+          
+
+
+            <div class="Chicken">
+                <img src="chikenburg.png" alt="Avatar">
+                <div class="container">
+                    <h1>Chicken Burger</h1>
+                    <h3>$4.50</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur<br> adipisicing elit, sed do eiusmod</p>
+                         
+                    
+                </div>
+                <div class="add">
+                  <a href="#" >  <i class="fas fa-plus" style="color: aliceblue;"></i></a>
+                
+            </div>
+              </div>
+            
+                 
+            <div class="Fatboy">
+                <img src="fatboybur.png" alt="Avatar">
+                <div class="container">
+                    
+                    <h1>Fatboy Burger</h1>
+                    <h3>$4.50</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur<br> adipisicing elit, sed do eiusmod</p>
+                </div>
+                <div class="add">
+                    <a href="#" >  <i class="fas fa-plus" style="color: aliceblue;"></i></a>
+                  
+              </div>
+              </div>
+            
+                 
+            <div class="classic">
+                <img src="classicsmash.png" alt="Avatar">
+                <div class="container">
+                    <h1>classic Smash</h1>
+                    <h3>$4.50</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur<br> adipisicing elit, sed do eiusmod</p>
+                         
+                 </div>
+                <div class="add">
+                    <a href="#" >  <i class="fas fa-plus" style="color: aliceblue;"></i></a>
+                  
+              </div>
+              </div>
+            
+        
+        </div>
+        <div class="burgercard2" style="margin-top: 250px;">
+          
+
+
+            <div class="bnine">
+                <img src="burgernine.png" alt="Avatar">
+                <div class="container">
+                    <h1>Burger Nine</h1>
+                    <h3>$5.15</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur<br> adipisicing elit, sed do eiusmod</p>
+                      
+                </div>
+                <div class="add">
+                    <a href="#" >  <i class="fas fa-plus" style="color: aliceblue;"></i></a>
+                  
+              </div>
+              </div>
+                 
+            <div class="beef">
+                <img src="beefburger.png" alt="Avatar">
+                <div class="container">
+                    
+                    <h1>Beef Burger</h1>
+                    <h3>$2.95</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur<br> adipisicing elit, sed do eiusmod</p>
+                </div>
+                <div class="add">
+                    <a href="#" >  <i class="fas fa-plus" style="color: aliceblue;"></i></a>
+                  
+              </div>
+              </div>
+            
+                 
+            <div class="bacon">
+                <img src="baconburger.png" alt="Avatar">
+                <div class="container">
+                    <h1>Bacon Burger</h1>
+                    <h3>$3.50</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur<br> adipisicing elit, sed do eiusmod</p>
+                       
+                </div>
+                <div class="add">
+                    <a href="#" >  <i class="fas fa-plus" style="color: aliceblue;"></i></a>
+                  
+              </div>
+              </div>
+            
+        
+        </div>
+    </section>
+    <section id="banner4">
+     
+           
+  <div class="reviews">
+    <div class="quo">
+         <h3>TESTIMONIALS</h3>
+    <h1>Our Customer Reviews</h1>
+        <img src="grayquotes.jfif"style="width: 150px;height: 150px;">
+</div>
+<div class="images">
+
+           
+    <div class="cust1">
+        <img src="test1.jpg"width="75px";height="75px">
+        <h3> Patricia Robert </h3>
+        <p> 1 Review</p> <br>
+       <h4 style="color: rgb(226, 183, 41);" >&#9734 &#9734 &#9734 &#9734 &#9734 </h4>
+       <p style=" margin-left: 90px;
+       font-size: 18px; margin-top: -20px;
+       color: gray;"> a week ago</p> 
+       <p style="margin-top: 10px;font-size: 30px;color: red;margin-left: 6px;font-family: 'Lobster', cursive;">
+        Delicious food and a very<br>
+         nice lorem ipsum dolor sit<br>
+          amet, consectetur<br> adipisicing elit, sed do <br>eiusmod tempor <br>incididunt ut labore dolore<br> magna.
+       </p>
+      
+    </div>
+  
+    
+    <div class="cust2">
+       
+            <img src="test2.jpg"width="75px";height="75px">
+         <h3>Linda Steven</h3>
+         <p> 1 Review</p> <br>
+         <h4 style="color: rgb(226, 183, 41);" >&#9734 &#9734 &#9734 &#9734 &#9734 </h4>
+         <p style=" margin-left: 90px;
+         font-size: 18px; margin-top: -20px;
+         color: gray;"> a week ago</p> 
+         <p style="margin-top: 10px;font-size: 20px;color:black;margin-left: 6px;font-family: 'Lobster', cursive;">
+            The best burger I have ever had elit, sed do <br>eiusmod tempor incididunt ut labore et <br>dolore magna aliqua ut enim ad minim <br>
+            veniam, quis nostrud exercitation.
+         </p>
+         <div class="cust3">
+         <img src="test3.jpg"width="75px";height="75px";>
+         <h3>	
+            David William</h3>
+         <p> 1 Review</p> <br>
+         <h4 style="color: rgb(226, 183, 41);" >&#9734 &#9734 &#9734 &#9734 &#9734 </h4>
+         <p style=" margin-left: 90px;
+         font-size: 18px; margin-top: -20px;
+         color: gray;"> a week ago</p> 
+         <p style="margin-top: 10px;font-size: 20px;color:black;margin-left: 6px;font-family: 'Lobster', cursive;">
+            The best burger I have ever had elit, sed do <br>eiusmod tempor incididunt ut labore et <br>dolore magna aliqua ut enim ad minim <br>
+            veniam, quis nostrud exercitation.
+         </p>
+        </div>
+
+   
+
+
+
+</div>
+  </div>
+          
+        
+
+    </section>
+    <section id="OUTLETS">
+        <div class="Outlet">
+                  <div class="outlettext">
+                   <h3>OUR OUTLETS</h3>
+                   <h1>Find an Outlet Near You</h1>
+                  </div>
+             <div class="outletimg">
+                   <div class="img1">
+                    <img src="outlet1.jpg">
+                    <div class="img1texts">
+                        <i class="fa fa-map-marker" aria-hidden="true" style="margin-top: 20px;color: darkgoldenrod;font-size: 25px;"></i>
+                        <h1 style="margin-top: 20px;">
+                            762 Fulton St San Francisco,<br> California(CA), 94102</h1>
+                            <h3 style="color: rgb(209, 25, 25);margin-top: 10px;">(415) 834-5089</h3>
+                    </div>
+                   </div>
+                
+
+                   <div class="img2">
+                    <img src="outlet2.jpg">
+                    <div class="img1texts">
+                        <i class="fa fa-map-marker" aria-hidden="true" style="margin-top: 20px;color: darkgoldenrod;font-size: 25px;"></i>
+                        <h1 style="margin-top: 20px;"> 66 Ceres St San Francisco, <br>California(CA), 94124</h1>
+                        <h3 style="color: rgb(209, 25, 25);margin-top: 10px;">(415) 931-1698</h3>
+                    </div>
+                </div>
+
+                <div class="img3">
+                    <img src="outlet3.jpg">
+                    <div class="img1texts">
+                        <i class="fa fa-map-marker" aria-hidden="true" style="margin-top: 20px;color: darkgoldenrod;font-size: 25px;"></i>
+                        <h1 style="margin-top: 20px;">766 Sutter St San Francisco,<br> California(CA), 94109</h1>
+                        <h3 style="color: rgb(209, 25, 25);margin-top: 10px;">(415) 647-1210</h3>
+                    </div>
+                </div>
+             </div>
+             </div>
+    </section>
+    <section id="banner5">
+        </section>
+
+
+
+        <section>
+            <div class="banner5div">
+            
+                <div class="shipping">
+                    <i class="fas fa-shipping-fast" style="color: rgb(209, 25, 25);
+                    font-size: 30px;margin-left: 30px;margin-top: 33px;"></i>
+                  
+                </div>
+                <div class="textshipping">
+                    <h1>Free Shipping on<br>
+                        First Order</h1>
+                        <p>Lorem ipsum dolor sit amet, consectetur<br> adipisicing elit, sed do eiusmod</p>
+                </div>
+
+                <div class="Dishes">
+                    <i class="fas fa-hamburger" style="color: rgb(209, 25, 25);
+                    font-size: 30px;margin-left: 30px;margin-top: 33px;"></i>
+                  
+                </div>
+                <div class="textdishes">
+                    <h1>Variety of<br>Dishes</h1>
+                    <p>Lorem ipsum dolor sit amet, consectetur<br> adipisicing elit, sed do eiusmod</p>
+                </div>
+
+                <div class="Delivery">
+                    <i class="fas fa-clock" style="color: rgb(209, 25, 25);
+                    font-size: 30px;margin-left: 30px;margin-top: 33px;"></i>
+                  
+                </div>
+                <div class="textdelivery">
+                    <h1> Thirty Minutes<br> Delivery</h1>
+                   <p>Lorem ipsum dolor sit amet, consectetur<br> adipisicing elit, sed do eiusmod</p>
+                </div>
+            </div>
+    </section>
+    <section id="banner6">
+     <div class="banner6div">
+
+        <div class="banner6text">
+            <div class="icon6">
+                <img src="appicon.png">
+            </div>
+           <br>
+           <h1> Get 20% Discount</h1><br>
+            <h2 style="font-family: 'Lobster', cursive;">  Get flat 20% off on your first order though <br> The Burger Nation App!</h2>
+            <div class="logos" style="margin-left: 130px;margin-top: 50px;">
+                <img src="playstore-img.png">
+                <img src="appstore-img.png">
+            </div>
+       
+        </div>
+        <div class="banner6img">
+          <img src="appscreenimg.png">
+
+        </div>
+       
+        
+    </section>
+    <section id="FOOTER">
+        <div class="footer">
+          
+            <div class="footnav">
+                <nav>
+                    <ul>
+
+                        <li><a href="#portfolio">Home</a> </li>
+                        <li><a href="#a">Our Menu</a></li>
+                        <li> <a href="#s">Offers</a></li>
+                        <li> <a href="#">About</a></li>
+                        <li><a href="#">Franchisee</a> </li>
+                        <li><a href="#">Contact</a> </li>
+
+                        
+
+                    </ul>
+                </nav>
+            </div>
+
+          
+           <div class="icons" style="float: right;">
+               
+        <i class="fab fa-facebook" style="padding: 20px; color: rgb(255, 255, 255);margin-top: 30px;
+        background-color:rgb(255, 210, 7);border-radius: 50%;"></i>
+        <i class="fab fa-twitter"style="padding: 20px;color: rgb(255, 255, 255);  background-color: rgb(255, 210, 7);border-radius: 50%;"></i>
+        <i class="fab fa-instagram" style="padding: 20px;color: rgb(255, 255, 255);  background-color: rgb(255, 210, 7);border-radius: 50%;"></i>
+
+           </div>
+    
+        </div>
+
+        <hr style="color: rgb(250, 239, 239);margin-top: 50px;">
+        <div class="copyright">
+            <h3 style="margin-top: 110px;margin-left: 20px;";> Copyright © 2022 Fast Food Restaurant</h3>
+          <h4 style="color:black;float:right;
+          margin-right: 20px;margin-bottom: 30px;text-decoration: underline; ">View Outlets Near You</h3>
+        </div>
+    </section>
+
+
+</body>
+
+</html>
